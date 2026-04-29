@@ -4,37 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a2654f71c5dda6c7",
+        "id": "ccdd59477ddfa534",
         "type": "tabs",
         "children": [
           {
-            "id": "0b9d1f6060fd3417",
+            "id": "332408192934f9f9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ようこそ.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ようこそ"
-            }
-          }
-        ]
-      },
-      {
-        "id": "ae6729289cda4bf0",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "cc8118f43c4c0b6d",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "グラフビュー"
+              "icon": "lucide-file",
+              "title": "新規タブ"
             }
           }
         ]
@@ -110,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ようこそ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "ようこそへのバックリンク"
+              "title": "バックリンク"
             }
           },
           {
@@ -129,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ようこそ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "ようこそからのアウトゴーイングリンク"
+              "title": "アウトゴーイングリンク"
             }
           },
           {
@@ -172,13 +150,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ようこそ.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "ようこそのアウトライン"
+              "title": "アウトライン"
             }
           }
         ]
@@ -199,8 +176,10 @@
       "bases:新規ベースを作成": false
     }
   },
-  "active": "0b9d1f6060fd3417",
+  "active": "332408192934f9f9",
   "lastOpenFiles": [
+    "ようこそ.md",
+    "details/glossary.md",
     "_index.md.tmp.32516.1777441269670",
     "details/biography.md",
     "details/biography.md.tmp.32516.1777441256160",
@@ -213,10 +192,8 @@
     "summary",
     "details/tone_examples.md",
     "details/marukin_deep.md",
-    "details/glossary.md",
     "details/factorio_context.md",
     "details/arsmagia_deep.md",
-    "details",
-    "ようこそ.md"
+    "details"
   ]
 }
