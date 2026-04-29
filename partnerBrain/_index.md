@@ -16,5 +16,6 @@ Claudeはこのファイルから読み始める。
 - [[details/arsmagia_deep]]
 - [[details/factorio_context]]
 - [[details/glossary]]
+- [[details/biography]] - 経歴・自分史
 
 詳細層はサマリーで足りないとき、または特定トピックを深掘りする時のみ参照。
