@@ -22,6 +22,8 @@
 
 ## 環境
 
-- 鳥越（Shikoku/愛媛）在住
+- 在住: 伊予三島（愛媛県四国中央市）
+- 出身・実家: 津山（岡山県）
+- 実姓: 鳥越（Torigoe）
 - Windows + Cloud Shell
 - Obsidian Vault: myBrain（思考ログ）
