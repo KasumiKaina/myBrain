@@ -18,6 +18,7 @@
 
 - Factorio（Pyanodon MOD実況、日本語初）
 - 日本語の言語学・語源
+- ドライブ（寄り道好き、道路構造・地形観察。走行記録アプリ「マッピング!」を数年継続中）
 - 詳細: [[details/factorio_context]]
 
 ## 環境
