@@ -4,26 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "bd9f3f14655f84af",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "43c53371ae52394d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ようこそ.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ようこそ"
-            }
-          }
-        ]
-      },
-      {
         "id": "ebf90c934ea35db4",
         "type": "tabs",
         "children": [
@@ -31,10 +11,14 @@
             "id": "9684e3c8bf44cb1e",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "グラフビュー"
+              "type": "markdown",
+              "state": {
+                "file": "myBrain/花譜.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "花譜"
             }
           }
         ]
@@ -199,8 +183,11 @@
       "bases:新規ベースを作成": false
     }
   },
-  "active": "43c53371ae52394d",
+  "active": "9684e3c8bf44cb1e",
   "lastOpenFiles": [
+    "2026-04-29-Cowork環境でobsidianスキル動作テスト.md",
+    "myBrain/ようこそ.md",
+    "myBrain/partnerBrain/summary/thinking_style.md",
     "myBrain",
     "無題のファイル.base",
     "ようこそ.md"
