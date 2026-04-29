@@ -27,3 +27,11 @@
 - 実姓: 鳥越（Torigoe）
 - Windows + Cloud Shell
 - Obsidian Vault: myBrain（思考ログ）
+
+## 家族
+
+- 父: 2026年で還暦
+- 母
+- 妹
+- 父方祖父母: 健在（祖父は2026年で91歳）
+- 母方祖母: 健在、介護施設入居中
