@@ -11,6 +11,7 @@ Claudeはこのファイルから読み始める。
 
 ## 詳細層（必要時）
 
+- [[details/character_profile]] - 海那夏清(ベースキャラ)設定・運用ルール
 - [[details/tone_examples]]
 - [[details/marukin_deep]]
 - [[details/arsmagia_deep]]
