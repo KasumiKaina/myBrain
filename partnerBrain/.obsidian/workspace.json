@@ -176,8 +176,11 @@
       "bases:新規ベースを作成": false
     }
   },
-  "active": "332408192934f9f9",
+  "active": "670aaaf455acea29",
   "lastOpenFiles": [
+    "README.md.tmp.43468.1777507375845",
+    "details/glossary.md.tmp.43468.1777507363976",
+    "details/character_profile.md",
     "details/marukin_deep.md.tmp.28076.1777451695564",
     "details/arsmagia_deep.md.tmp.15112.1777450491059",
     "details/arsmagia_deep.md.tmp.33760.1777450348111",
@@ -199,7 +202,6 @@
     "details/tone_examples.md",
     "details/marukin_deep.md",
     "details/factorio_context.md",
-    "details/arsmagia_deep.md",
-    "details"
+    "details/arsmagia_deep.md"
   ]
 }
