@@ -17,6 +17,7 @@ Claudeはこのファイルから読み始める。
 - [[details/arsmagia_deep]]
 - [[details/factorio_context]]
 - [[details/drive_context]] - ドライブ動機軸・道路観察癖・走行履歴
+- [[details/attention_profile]] - 注意・フィルタ機構(聴覚的選択的注意の弱さ・業務環境配慮)
 - [[details/glossary]]
 - [[details/biography]] - 経歴・自分史
 
