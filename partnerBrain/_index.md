@@ -16,6 +16,7 @@ Claudeはこのファイルから読み始める。
 - [[details/marukin_deep]]
 - [[details/arsmagia_deep]]
 - [[details/factorio_context]]
+- [[details/drive_context]] - ドライブ動機軸・道路観察癖・走行履歴
 - [[details/glossary]]
 - [[details/biography]] - 経歴・自分史
 
