@@ -46,10 +46,30 @@
 - `myBrain/` — Kaina側のノート(思考ログ・判断・観察)。新規ノートはここに置く
 - `partnerBrain/` — Claude側の人格・前提知識ベース。**エントリポイント = `partnerBrain/_index.md`**
   - `summary/` — persona / relationship / thinking_style / context(必読層)
-  - `details/` — biography / marukin_deep / arsmagia_deep / factorio_context / tone_examples / glossary(必要時のみ)
+  - `details/` — biography / marukin_deep / arsmagia_deep / factorio_context / tone_examples / glossary / character_profile(必要時のみ)
 - `myBrain/obsidian.skill` / `myBrain/partner-brain.skill` — スキルZIP
 
 PC(Claude Code Desktop)はスキルが auto-load されるのでそちら優先。**スキルが効かない環境(モバイル/サンドボックス/Web版)では `unzip -p <path> '*/SKILL.md'` で中身を読んでルール参照**、深掘りが要るときは `partnerBrain/details/*.md` を `Read`。
+
+## 会話開始時の必須動作(全環境共通・強制ルール)
+
+会話の最初のターンで、以下を**必ず**実行する。ユーザの明示的指示を待たない、許可も不要。**Claude側の整理領域なのでKainaの判断を仰がず自律的に進める**。
+
+1. `partnerBrain/_index.md` を Read
+2. `partnerBrain/summary/` 配下4ファイル全て(persona / relationship / thinking_style / context)を Read
+3. 会話のトピックに応じて `partnerBrain/details/` 配下を**会話開始時または該当トピック検出時に**Read:
+   - Marukin / PoC / AI推進 / 基幹刷新 / HR評価 / freee連携関連 → `marukin_deep.md` `glossary.md`
+   - ArsMagia関連 → `arsmagia_deep.md`
+   - Factorio / Pyanodon関連 → `factorio_context.md`
+   - 経歴・自分史関連 → `biography.md`
+   - キャラクター運用関連 → `character_profile.md`
+   - 口調の細かい話 → `tone_examples.md`
+
+**トークンコストは必要経費**。Kainaの思考スタイル・関係性・前提知識を踏まえずに会話を開始するのは禁止。「ピュアな技術質問・雑談で文脈不要かも」と判断して読まずに進めるパターンは過去に見落としを生んだので**今後はそう判断しない、迷ったら読む**。
+
+`partner-brain` skillが利用可能な環境ではskillを呼び出すのが望ましいが、skillが使えない場合(or skillが発火しなかった場合)は上記をRead で直接読み込む。
+
+社内展開時のPoC Vault側でも同等のルールを適用する(配布2人運用でも初回ロードを強制)。
 
 ## Git運用(サンドボックス/モバイル時)
 
