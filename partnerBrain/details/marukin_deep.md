@@ -58,3 +58,46 @@
 
 - Chat共有スペース+GAS Bot+スプシ蓄積+Gemini構造化抽出パイプライン(構築済み・配達リソース管理用途継続)
 - 共有Drive上にPoC専用Vault構築予定(個人raw領域はアクセス権分離)
+
+### 配布Claude側設計確定 (2026-05-18)
+
+GoogleDrive経由Vault配布の「扱いづらさ・応答速度」問題を起点に、Cowork配信側の具体設計を確定。
+
+**設計思想**: Kaina個人運用と配布運用を**完全分離**する。
+- 個人運用: 現状のVault + git + partnerBrain自律更新 維持
+- 配布運用: Vault概念を捨て、Claude.ai/Desktop/Mobile完結型(C案)
+
+**配布側構造**:
+- Claude Team plan、Project "Marukin-Support"
+- Project knowledge: 初期4ファイル(`marukin_overview` / `marukin_org` / `marukin_rules` / `claude_role`)
+- Project memory: 自動蓄積+Kaina(管理者)剪定
+- Drive Connector(Remote): 業務文書参照
+- Cloud Routines: 朝のブリーフィング・タスクリマインダー自動化
+
+**通知配信の多重化(Pixel特化)**:
+- 主: Claude モバイル/Desktopプッシュ
+- 保険(外勤): Googleカレンダーイベント+通知時刻(Pixel標準通知に乗る、運転中も確実)
+- 保険(全員): Email通知
+- 将来オプション: Google Tasks MCP(Phase 3以降)
+
+**本質要件の再定義**:
+- 「自律更新運用」は手段、本来の要件は **「社員のメンテリソース消費ゼロ」+「窓口一本化」**
+- partnerBrain中身の社員可視性は不要、保持できていれば良い
+- これに気づいてVault思想を配布側で捨てる判断ができた
+
+**Phase別ロードマップ**:
+- Phase 0(1週間): Project作成、初期4ファイル、Calendar連動テスト
+- Phase 1(2週間): Kaina個人検証、memory蓄積挙動の実機確認
+- Phase 2(1ヶ月): 配布相手2人(内勤1+外勤1推奨)招待、フィードバック収集
+- Phase 3(2ヶ月以降): 全社展開判断、Tasks/Chat MCP等の拡張検討
+
+**蹴った選択肢**:
+- Google Chat内完結bot(B案): Claude.aiのProject knowledge/memoryに直接アクセス不可、Files API+Memory Tool自前実装は工数大、Agent SDK 6/15統合待ち。Phase 3以降に再検討
+- ハイブリッド(D案): 設計優秀だが「窓口一本化」要件と一致せず、Phase 1では採用せず
+
+**実機検証必須ポイント**:
+- Project memoryの共有粒度(メンバー別/Project全体共有)
+- Drive Connectorの日本語Markdown検索精度
+- Cloud Routines → モバイルプッシュの確実性
+
+詳細・思考プロセス: [[../../2026-05-18-Marukin-Claude配布運用設計]]
