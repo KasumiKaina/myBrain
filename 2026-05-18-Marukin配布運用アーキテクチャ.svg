@@ -1,0 +1,84 @@
+<svg width="100%" viewBox="0 0 680 632" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Marukin Claude配布運用アーキテクチャ(改訂版)</title>
+<desc>データレイヤーを更新頻度で4層に分け、Salesforce将来層を加えた構成。Claude基盤・通知配信・配布相手へと繋がり、配布相手はClaudeと双方向で対話する。</desc>
+<style>
+.cont{fill:none;stroke:#888780;stroke-width:0.5;stroke-dasharray:5 3;}
+.label{font:400 14px sans-serif;fill:#2C2C2A;}
+.title{font:500 14px sans-serif;}
+.sub{font:400 12px sans-serif;}
+.arr{stroke:#5F5E5A;stroke-width:1.5;fill:none;}
+.b-teal{fill:#E1F5EE;stroke:#0F6E56;stroke-width:0.5;}
+.b-purple{fill:#EEEDFE;stroke:#534AB7;stroke-width:0.5;}
+.b-gray{fill:#F1EFE8;stroke:#5F5E5A;stroke-width:0.5;}
+.b-coral{fill:#FAECE7;stroke:#993C1D;stroke-width:0.5;}
+.t-teal{fill:#04342C;}.s-teal{fill:#0F6E56;}
+.t-purple{fill:#26215C;}.s-purple{fill:#534AB7;}
+.t-gray{fill:#2C2C2A;}.s-gray{fill:#5F5E5A;}
+.t-coral{fill:#4A1B0C;}.s-coral{fill:#993C1D;}
+</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+
+<rect x="40" y="50" width="590" height="175" rx="10" class="cont"/>
+<text class="label" x="56" y="70">データレイヤー(更新頻度で4層 + 将来層)</text>
+
+<rect x="56" y="82" width="129" height="64" rx="6" class="b-teal"/>
+<text class="title t-teal" x="120" y="104" text-anchor="middle">準静的層</text>
+<text class="sub s-teal" x="120" y="122" text-anchor="middle">会社概要・ルール</text>
+<text class="sub s-teal" x="120" y="138" text-anchor="middle">手動更新</text>
+<rect x="199" y="82" width="129" height="64" rx="6" class="b-teal"/>
+<text class="title t-teal" x="263" y="104" text-anchor="middle">中頻度動的層</text>
+<text class="sub s-teal" x="263" y="122" text-anchor="middle">議事録・案件</text>
+<text class="sub s-teal" x="263" y="138" text-anchor="middle">Drive即反映</text>
+<rect x="342" y="82" width="129" height="64" rx="6" class="b-teal"/>
+<text class="title t-teal" x="406" y="104" text-anchor="middle">文脈層</text>
+<text class="sub s-teal" x="406" y="122" text-anchor="middle">人・関係性</text>
+<text class="sub s-teal" x="406" y="138" text-anchor="middle">会話から自動</text>
+<rect x="485" y="82" width="129" height="64" rx="6" class="b-teal"/>
+<text class="title t-teal" x="549" y="104" text-anchor="middle">リアルタイム層</text>
+<text class="sub s-teal" x="549" y="122" text-anchor="middle">予定・メール</text>
+<text class="sub s-teal" x="549" y="138" text-anchor="middle">API直結</text>
+
+<rect x="56" y="158" width="558" height="46" rx="6" class="b-teal" stroke-dasharray="5 3"/>
+<text class="title t-teal" x="335" y="178" text-anchor="middle">将来層 — Salesforce MCP</text>
+<text class="sub s-teal" x="335" y="195" text-anchor="middle">在庫・受発注・日報マスタ(基幹刷新後にSF集約)</text>
+
+<line class="arr" x1="335" y1="225" x2="335" y2="255" marker-end="url(#arrow)"/>
+
+<rect x="40" y="258" width="590" height="92" rx="10" class="cont"/>
+<text class="label" x="56" y="278">Claude基盤(Team plan)</text>
+<rect x="56" y="290" width="370" height="50" rx="6" class="b-purple"/>
+<text class="title t-purple" x="241" y="312" text-anchor="middle">Marukin-Support Project</text>
+<text class="sub s-purple" x="241" y="328" text-anchor="middle">配布の中心</text>
+<rect x="446" y="290" width="166" height="50" rx="6" class="b-purple"/>
+<text class="title t-purple" x="529" y="312" text-anchor="middle">Cloud Routines</text>
+<text class="sub s-purple" x="529" y="328" text-anchor="middle">自動実行</text>
+<line class="arr" x1="446" y1="315" x2="429" y2="315" marker-end="url(#arrow)"/>
+
+<line class="arr" x1="335" y1="350" x2="335" y2="382" marker-end="url(#arrow)"/>
+
+<rect x="40" y="385" width="590" height="100" rx="10" class="cont"/>
+<text class="label" x="56" y="405">通知配信(多重化)</text>
+<rect x="56" y="415" width="172" height="56" rx="6" class="b-gray"/>
+<text class="title t-gray" x="142" y="439" text-anchor="middle">Claudeプッシュ</text>
+<text class="sub s-gray" x="142" y="457" text-anchor="middle">主・全員</text>
+<rect x="248" y="415" width="172" height="56" rx="6" class="b-gray"/>
+<text class="title t-gray" x="334" y="439" text-anchor="middle">Googleカレンダー</text>
+<text class="sub s-gray" x="334" y="457" text-anchor="middle">外勤の保険</text>
+<rect x="440" y="415" width="172" height="56" rx="6" class="b-gray"/>
+<text class="title t-gray" x="526" y="439" text-anchor="middle">Email</text>
+<text class="sub s-gray" x="526" y="457" text-anchor="middle">全員の保険</text>
+
+<line class="arr" x1="335" y1="485" x2="335" y2="517" marker-end="url(#arrow)"/>
+
+<rect x="40" y="520" width="590" height="92" rx="10" class="cont"/>
+<text class="label" x="56" y="540">配布相手(内勤・外勤)</text>
+<rect x="56" y="552" width="267" height="50" rx="6" class="b-coral"/>
+<text class="title t-coral" x="189" y="574" text-anchor="middle">内勤者</text>
+<text class="sub s-coral" x="189" y="590" text-anchor="middle">Claude Desktop主</text>
+<rect x="347" y="552" width="267" height="50" rx="6" class="b-coral"/>
+<text class="title t-coral" x="480" y="574" text-anchor="middle">外勤者・営業</text>
+<text class="sub s-coral" x="480" y="590" text-anchor="middle">Mobile主・音声入力</text>
+
+<path class="arr" d="M630 577 Q656 577 656 558 L656 337 Q656 315 634 315" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<text class="sub" x="670" y="450" text-anchor="middle" fill="#5F5E5A" transform="rotate(90 670 450)">対話(双方向)</text>
+</svg>
