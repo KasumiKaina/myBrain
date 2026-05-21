@@ -258,6 +258,10 @@ Marukinのマスタは基幹刷新後にSalesforceが正になる予定。これ
 - 「日報をSFベースで入力」と最初考えたけど、よく聞くと欲しいのは「データがSFに集まること」で「入力UIがSFであること」じゃない。**入力UIとデータ正本を分けて考える**と、AppSheet浸透資産を捨てずに済む。partnerBrain自律更新のとき「自律更新は手段、目的は社員リソースゼロ」と気づいたのと同じ構造のほぐし方
 - Phase 1-2は基幹刷新と独立して走れる。SF統合(Phase 3-4)だけが刷新完了に依存。依存関係を切り分けておくと「刷新が遅れてもPoCは止まらない」
 
+### 関連: memory/knowledge層の仕組み
+
+データレイヤーの設計根拠になっているClaude側の仕組み(memory層・knowledge層の管理、データ3分類、Connector選定)は別ノートに整理した: [[2026-05-21-Claude-memory-knowledge層の仕組み]]
+
 ### 次のアクション(更新)
 
 1. Phase 0: Marukin-Support Project作成 + 初期4ファイル(Google Docs形式)書き起こし
