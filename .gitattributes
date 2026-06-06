@@ -1,0 +1,18 @@
+# 改行コードをLFに正規化（Windows↔Linux/sandbox間のCRLFノイズ防止）
+* text=auto eol=lf
+
+# Markdown / テキスト系は明示的にLF
+*.md   text eol=lf
+*.txt  text eol=lf
+*.json text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+
+# バイナリは変換しない
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary
+*.zip  binary
+*.skill binary
